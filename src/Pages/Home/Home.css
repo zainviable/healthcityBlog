@@ -1,0 +1,12 @@
+.counter-overlay {
+  background: url("../../assets/img/work.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.counter-heading {
+  font-size: 44px;
+  font-weight: 700;
+}

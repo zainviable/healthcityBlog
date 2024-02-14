@@ -1,0 +1,120 @@
+/* Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Tailwind CSS */
+
+/* custom colors */
+:root {
+  --black-color: #313131;
+  --white-color: #ffffff;
+  --off-white-color: #f1f1f1;
+  --blue-color: #01143a;
+  --light-green-color: #84c440;
+  --deep-green-color: #61a518;
+}
+/* custom colors */
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--black-color);
+  background-color: var(--white-color);
+
+  /* disable content copy */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* disable content copy */
+}
+
+.off-white-text {
+  color: var(--off-white-color);
+}
+
+.white-bg {
+  background-color: var(--white-color);
+}
+
+.blue-bg {
+  background-color: var(--blue-color);
+}
+
+.light-green-bg {
+  background-color: var(--light-green-color);
+}
+
+.deep-green-bg {
+  background-color: var(--deep-green-color);
+}
+
+.common-title {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.common-btn {
+  background-color: var(--light-green-color);
+  color: var(--off-white-color);
+  border: none;
+}
+
+.common-btn:hover {
+  background-color: var(--deep-green-color);
+}
+
+.model-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.54);
+  backdrop-filter: blur(2px);
+  z-index: 110;
+}
+
+.model-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: none;
+  border-radius: 10px;
+  z-index: 120;
+}
+
+.modal-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.modal-desc {
+  font-size: 16px;
+}
+
+/* Global styles */
+
+/* responsive style */
+@media only screen and (max-width: 640px) {
+  .common-title {
+    font-size: 28px;
+  }
+
+  .modal-title {
+    font-size: 14px;
+  }
+
+  .modal-desc {
+    font-size: 13px;
+  }
+}
+/* responsive style */

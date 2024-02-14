@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Team.css";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 import MemberCard from "../../components/MemberCard/MemberCard";
 import CommonBanner from "../../components/CommonBanner/CommonBanner";

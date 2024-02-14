@@ -1,16 +1,8 @@
 import React from "react";
 import userImg from "../../assets/img/user.png";
-<<<<<<< HEAD
 import { Link } from "react-router-dom";
 
 const MemberCard = ({ member, teamId }) => {
-=======
-import { Link, useNavigate } from "react-router-dom";
-
-const MemberCard = ({ member, teamId }) => {
-  const navigate = useNavigate();
-
->>>>>>> ea92eff5e992b04f789b16de0fabae69d3ae4e9a
   return (
     <div className="flex flex-col justify-between items-center gap-y-5 px-2 py-4 border border-[#f1f1f1] rounded-md hover:border-[#fff] hover:shadow-lg">
       <div className="flex flex-col items-center gap-y-2">

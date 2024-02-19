@@ -4,6 +4,7 @@ import {
   clinicalteamList,
   nonClinicalteamList,
 } from "../../DataConfig/TeamData";
+import userImg from "../../assets/img/user.png";
 
 const TeamMemberDetail = () => {
   const { teamId, memberId } = useParams();
@@ -15,8 +16,12 @@ const TeamMemberDetail = () => {
     if (currentMember) {
       const link = document.createElement("a");
       link.href = currentMember?.cv;
+      // link.download =
+      //   "CV_of_" + currentMember?.name.replace(/\s+/g, "_") + ".pdf";
       link.download =
-        "CV_of_" + currentMember?.name.replace(/\s+/g, "_") + ".pdf";
+        "CV_of_" +
+        currentMember?.name.replace(/\s+/g, "_").replace(/,/g, "") +
+        ".pdf";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -46,12 +51,24 @@ const TeamMemberDetail = () => {
   return (
     <div className="px-5 lg:px-24 my-14">
       <div className="flex flex-col md:flex-row items-center gap-5">
-        <div className="w-40 h-40">
+        {/* <div className="w-40 h-40">
           <img
             src={currentMember?.imgUrl}
             alt="member image"
-            className="w-full rounded-full"
+            className="w-full h-full rounded-full"
           />
+        </div> */}
+        <div className="avatar">
+          <div className="w-32 rounded-full">
+            <img
+              src={
+                !currentMember?.imgUrl || currentMember?.imgUrl === ""
+                  ? userImg
+                  : currentMember?.imgUrl
+              }
+              alt="member image"
+            />
+          </div>
         </div>
         <div className="text-center md:text-left">
           <h2 className="text-[24px] font-bold">{currentMember?.name}</h2>
@@ -60,7 +77,7 @@ const TeamMemberDetail = () => {
           </p>
         </div>
       </div>
-      <div className="mt-8">
+      <div className="mt-6">
         {/* {currentMember?.detail ? (
           <p className="font-medium">{currentMember?.detail}</p>
         ) : (

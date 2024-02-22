@@ -22,7 +22,7 @@ const Team = () => {
 
   const slugs = cleanedPathname.split("/");
   const teamId = slugs[slugs.length - 1];
-  console.log("teamId===", teamId);
+  // console.log("teamId===", teamId);
 
   const bannerContent = {
     title: "Meet The Team",

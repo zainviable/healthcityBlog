@@ -11,6 +11,8 @@ import member10NC from "../assets/img/non-clinical/naima.jpg";
 import member11NC from "../assets/img/non-clinical/robert.jpg";
 import member12NC from "../assets/img/non-clinical/vincent.jpg";
 import member13NC from "../assets/img/non-clinical/seikegba.jpg";
+import member14NC from "../assets/img/non-clinical/onyinye.jpg";
+import member15NC from "../assets/img/non-clinical/dinah.jpg";
 
 import member1C from "../assets/img/clinical/edward.png";
 import member2C from "../assets/img/clinical/lucy.png";
@@ -39,6 +41,8 @@ import member24C from "../assets/img/clinical/iiaria.jpg";
 import member25C from "../assets/img/clinical/manminder.jpeg";
 import member26C from "../assets/img/clinical/raffaella.png";
 import member27C from "../assets/img/clinical/shuja.jpeg";
+import member28C from "../assets/img/clinical/gail.jpg";
+import member29C from "../assets/img/clinical/monika.jpg";
 
 import cvOfSelemo from "../assets/cv/Dr_Francis_Selemo.pdf";
 import cvOfHollenbeck from "../assets/cv/Danelle_Devi_Hollenbeck.pdf";
@@ -57,6 +61,20 @@ import cvOfIlaria from "../assets/cv/Giovanelli_Ilaria.pdf";
 import cvOfManminder from "../assets/cv/Manminder_Hewey.pdf";
 import cvOfRaffaella from "../assets/cv/Raffaella_Lodigiani.pdf";
 import cvOfShuja from "../assets/cv/Shuja_Hoda.pdf";
+import cvOfRobert from "../assets/cv/Dr_Robert_Patton.pdf";
+import cvOfOnyinye from "../assets/cv/Onyinye_C_Oluitan.pdf";
+import cvOfCaroline from "../assets/cv/Caroline_Howard.pdf";
+import cvOfDinah from "../assets/cv/Dinah_Kissiedu.pdf";
+import cvOfEva from "../assets/cv/Eva_Tinka.pdf";
+import cvOfFarida from "../assets/cv/Farida_Yesmin_Mezy.pdf";
+import cvOfGail from "../assets/cv/Gail_Bennett.pdf";
+import cvOfKay from "../assets/cv/Kay_Savage.pdf";
+import cvOfLindita from "../assets/cv/Lindita_Nerguti.pdf";
+import cvOfMark from "../assets/cv/Mark_Howard.pdf";
+import cvOfMonika from "../assets/cv/Monika_Gos.pdf";
+import cvOfSian from "../assets/cv/Sian_Jones_Banton.pdf";
+import cvOfSonya from "../assets/cv/Sonya_Tancheya.pdf";
+import cvOfBlanco from "../assets/cv/Teresa_Blanco_Martinez.pdf";
 
 const nonClinicalteamList = [
   {
@@ -64,6 +82,9 @@ const nonClinicalteamList = [
     imgUrl: member1NC,
     name: "Sonya Tancheya",
     designation: "MSC, Senior Practitioner & Psychologist",
+    detail:
+      "Sonya is a business psychologist, and HR consultant. She is also a CBT Psychotherapist. Before Health City Sonya worked as Project Manager   and Research Assistant at Central and East European Centre of Cognitive Science New Bulgarian University Bulgaria.",
+    cv: cvOfSonya,
   },
   {
     id: 2,
@@ -77,6 +98,8 @@ const nonClinicalteamList = [
     imgUrl: member3NC,
     name: "MR. Cletus Osigwe",
     designation: "Accountant & Family Budgeting Trainer",
+    detail:
+      "Cletus is an accomplished Chartered accountant, who has many years worked in office settings and in private practice offering accounting and business services. He helps to simplify technical and complex budgeting concepts to help families take control of their budgets.  He also helps families with UK annual tax returns. Cletus Osigwe, based in London, GB, is currently a PRINCIPAL at JCS & CO. With a robust skill set that includes Managerial Finance, Accounting, Tax, Bookkeeping, Journal Entries and more, Cletus Osigwe contributes valuable insights to the industry.",
   },
   {
     id: 4,
@@ -84,30 +107,43 @@ const nonClinicalteamList = [
     name: "Afroz Kazim Ahmed",
     designation:
       "Senior data manager at a National Health Service (NHS) in the UK",
+    detail:
+      "Afroz is our sounding board when it comes to data, graphic design, or performance evaluation to help us ensure it is the most user-friendly information that goes to the public and corporate managers of existing and potential new clients/customers. He is a senior data manager at a National Health Service (NHS) in the UK.",
   },
   {
     id: 5,
     imgUrl: member5NC,
     name: "Sian Jones",
     designation: "Person-to-person relationship Counsellor",
+    detail:
+      "Sian is an integrative counsellor that studied the different facets to a therapeutic relationship. She interchanges between the different models of working and have specific grounding in the person-to-person relationship (Person-Centred approach) and the transferential relationship (Psychodynamic approach).",
+    cv: cvOfSian,
   },
   {
     id: 6,
     imgUrl: member6NC,
     name: "Eva Tinka, MBPsS",
     designation: "A Psychologist and a Partner at Health City",
+    detail:
+      "I am a Psychology Coach, with extensive experience in healthcare. I am a trained Cousellor and a Psychologist with Graduate Basis for Chartered Membership with the British Psychological Society. As a Coach I use my knowledge, skill , expertise, experience and a creative approach to help people and organisations (with a wide range of problematic situations) to unlock their full potential and be catapulted from where they are stuck to where they want to be. I use Psychology and Coaching tools to tailor sessions to individual Clients and their needs. My main areas of specialism are Confidence, Resilience and Well being. I use CBT to help clients with Stress, depressions and other Psychological Problems.",
+    cv: cvOfEva,
   },
   {
     id: 7,
     imgUrl: member7NC,
     name: "Dr. Anna Lukusa",
     designation: "Medical Doctor & Health Trainer",
+    detail:
+      "Anna is a medical doctor (GP) in the UK national health service (NHS). She specialised in children care.",
   },
   {
     id: 8,
     imgUrl: member8NC,
     name: "Teresa Blanco Martinez",
     designation: "CBT and Integrative Therapy Practitioner & Psychologist",
+    detail:
+      "Teresa's interest is in a brain injury. Before joining Health City in 2014, Teresa gained psychology clinical internship at Surgical Hospital Gustavo Aldereguia Lima, Cuba. She completed a 5 years Psychology qualification at University of Granada, Spain and has special interest in clinical psychology, neuropsychology/brain injury and Clinical child psychology.  Nothing gives Teresa greater happiness than seeing family's lives changed for good.",
+    cv: cvOfBlanco,
   },
   {
     id: 9,
@@ -115,6 +151,8 @@ const nonClinicalteamList = [
     name: "Dr. Francis Selemo",
     designation:
       "Cognitive Behavioural Psychotherapist (CBT), Chartered and HCPC regulated Clinical Psychologist",
+    detail:
+      "Dr. Benaliligha Francis Selemo is a consultant-grade doctor of mental health (specifically, clinical psychologist), with 8 out of his 10 UK national health (NHS) and private service users reporting good recovery. A co-author of more than 10 wellbeing books, plus 28 years therapy experience (1995 to date) and specialises in occupational and family medicine/healthcare. He is into the application of psychological techniques into almost any situation because of his experience as chartered psychologist, regulated clinical psychologist clinical, accredited Cognitive behavioural therapist, Behavioural Couple Therapy practitioner, Long Term Health Conditions practitioner, clinical service lead/manager in national health service (NHS)/private hospitals and charities in the UK and overseas and Chartered Management Institute's registered manager/ and subject matter expert. He does assessment and treatment of patients, wellbeing resilience, performance improvement, research/service evaluation, supervision, training, and consultation to patients, families, staff, managers, organisations and communities. He works in the area of mental health, including workplace, school, migration, relationships, complex trauma, depression, anxiety, addictions, hearing voices, delusions, challenging behaviours, physical conditions, cultural and faith issues. He is school governor and loves nature, farming, cooking, swimming, poetry, travelling, charity work .",
     cv: cvOfSelemo,
   },
   {
@@ -122,25 +160,53 @@ const nonClinicalteamList = [
     imgUrl: member10NC,
     name: "Naima Ali",
     designation:
-      "CBT Practitioner and Clinical Consultant in Somalian Mental Health",
+      "CBT Practitioner, Health Advocate and Clinical Consultant in Black & Minority Mental Health in Health City",
+    detail:
+      "Naima came to London from Somalia in 1997. She has 17 years experience of working with people with drug and alcohol misuse issues. She is an anti-FGM activist (Female Genital Mutilation), who currently works as a Health Advocate with the NHS. She is also setting up an adult home care business. A trustee of St Olave's United Charities, she is passionate about social justice, especially for women and families.",
   },
   {
     id: 11,
     imgUrl: member11NC,
     name: "Dr Robert Patton, Phd",
     designation: "Research & Development Governance Lead/Advisor",
+    detail:
+      "Robert is a psychology/mental health lecturer at a UK University. He is also a Visiting Research Fellow in Addiction and also an  NIHR Investigator for National Institute for Health Research.  Robert's passion is researching and teaching that benefits the public  and for academic consumption.",
+    cv: cvOfRobert,
   },
   {
     id: 12,
     imgUrl: member12NC,
     name: "Vincent Chidili",
     designation: "CBT and Integrative Therapy Practitioner & Psychologist",
+    detail:
+      "Vincent is a psychologist with a master degree in postgraduate studies in child development. Vincent is passionate about mental health issues and children/family wellbeing. He is trained in substance misuse and courses in Evidence based psychological treatments.",
   },
   {
     id: 13,
     imgUrl: member13NC,
     name: "Theresa Seikegba",
     designation: "Business Development Coordinator & Global Cookery Expert",
+    detail:
+      "Theresa  joined Health City from its beginning and has been managing client liaisons and sourcing new business opportunities ever since. As the primary point of contact, she handles workflow and communication between clients and our team. She helps to ensure the smoothest delivery of your solution. Before Health City Theresa had many years developing and running retail business and working in the social care and mental health industry.",
+  },
+  {
+    id: 14,
+    imgUrl: member14NC,
+    name: "Mrs Onyinye  Charity Oluitan",
+    designation:
+      "Operations Manager, Client/Training Services & Management Consultant.",
+    detail:
+      "Onyinye   is well accomplished in the mental health, customer care, energy and commercial corporate  industry. She has been helping clients for over 20 years through a variety of management and leadership roles.  She is a committed Operations manager and detail-oriented administrator knowledgeable of all office functions, with solid background in management, and teaching at leading UK institutions/organisations, teaching students from various social and cultural backgrounds. She has  exciting teaching style  of helping  you to understand complicated topics.",
+    cv: cvOfOnyinye,
+  },
+  {
+    id: 15,
+    imgUrl: member15NC,
+    name: "Dinah Kissiedu",
+    designation: "Counsellor & Author",
+    detail:
+      "Dinah's interest in improving the lives of others through therapy landed her in prestigious roles where she provided emotional support for clients such as the Metropolitan Police, Apple, Virgin Airlines, London Borough Councils, and Health City as a Senior Partner and later on opening her own private practice in London and then relocating to Atlanta. Dinah is a people person and enjoys uplifting people and increasing their awareness of their ability to co-create their own reality by adopting principles that are reinforced by enrolling in mentorship, actively reading/listening audiobooks, attending workshops, or events with the aim to encourage personal development. She believes that it is in the relationship with ourselves and others, that we have the greatest capacity for happiness; it is her hope that she can help increase people's motivation to pursue more of the joy their lives can offer.",
+    cv: cvOfDinah,
   },
 ];
 
@@ -168,7 +234,9 @@ const clinicalteamList = [
     id: 3,
     imgUrl: member3C,
     name: "Ray Singh",
-    designation: "Senior Therapist & Coach",
+    designation: "Cognitive Behavioural Hypnotherapist & Coach",
+    detail:
+      "Before becoming a cognitive behavioural hypnotherapist, Ray coached doctors and law students in the USA. He was also involved in  training nurses, doctors and students in venepuncture and cannulation at some of London’s leading hospitals. Ray is passionate in helping people quit smoking. I was born and raised in London and didn’t like school much however I did enjoy drama more than I did maths. Along with a high percentage of teenagers I too started to smoke and continued for over 10 years. I wanted to preserve my voice and so I quit smoking with hypnotherapy, this allowed me to perform some great clear speeches at drama school. Later, I was awarded my Masters degree and then relocated to California where I worked in front of the camera, on stage and in a voice recording booth. My interest in the medical field peaked, so I trained to get my Phlebotomy license. During my years in California I coached International Doctors and prepped them for their foreign medical exams, I also coached law students at Loyola Law School in Los Angeles. After a good few years on the West Coast I then found myself on the East Coast in New York where I continued coaching this time at New York Law School, New York University – School of Medicine and New York Institute of Technology. The winters were rough so I returned back home and began training nurses, doctors and students in venepuncture and cannulation at some of London's leading hospitals. I trained as a Cognitive Behavioural Hypnotherapist at the UK College of Hypnosis & Hypnotherapy and in April 2015 I celebrated my 11th year of being smoke free…I've turned over many leaves and hope I can help you turn a few.",
   },
   {
     id: 4,
@@ -176,6 +244,8 @@ const clinicalteamList = [
     name: "Dr. Yomi Adetola",
     designation:
       "Consultant Psychiatrist, Therapist, Trainer & Clinical Advisor",
+    detail:
+      "Yomi specialised in addiction and mental health. He as many years of psychiatric work experience in the UK national health service, as well as the charity and private sectors. He will go the extra mile to provide medical and psychotherapy care to families.",
   },
   {
     id: 5,
@@ -183,12 +253,17 @@ const clinicalteamList = [
     name: "Beatrice Salice",
     designation:
       "Complementary Therapist and Clinical Consultant at Health City",
+    detail:
+      "I am well accomplished in the practice of  various types of  alternative therapies such as reflexology, acupuncture and Indian Head Massage. I am a fully qualified Complementary Therapist in Massage included Oncology Massage, Aromatherapy, Body Acupuncture, Auricular Acupuncture, Reiki level 1, Reflexology, Indian Head Massage, and Herbal Remedies and Nutritionnal Adviser. I strongly believe in a Holistic Approach to stimulate client's own strength using different strategies from basic healthy lifestyle, to a combination of complementary treatment discussed during the consultation with my client, to meet my client's need and to reconnect the individual with him/herself in order to strengthen the immune system and to create harmony between Body, Spirit and Mind. I have a good ability and experience to approach client with a friendly and professional manners, because I am passionate with my profession. I opt for quality rather than quantity.",
   },
   {
     id: 6,
     imgUrl: member6C,
     name: "Mrs Farida Yesmin Mezy",
     designation: "Counsellor and Psychotherapist",
+    detail:
+      "Farida is a qualified master degree postgraduate level Integrative Counsellor and Psychotherapist. Farida's theoretical approaches to counselling are Person centred, CBT and Attachment. Person centred approach places a huge emphasis on the therapeutic relationship between therapist and client. Previous roles in UK included: Integrative Substance use Counsellor  at Crime Reduction Initiative ( CRI)  and Integrative Student Counsellor at The Tithe Barn Counselling Service in City of Westminster College.  She is passionate at helping vulnerable  families and also volunteering for the local community where she reaches out to Asian  and non-Asian families  in need of counselling.",
+    cv: cvOfFarida,
   },
   {
     id: 7,
@@ -196,6 +271,9 @@ const clinicalteamList = [
     name: "Mark Howard",
     designation:
       "Clinical Hypnotherapist and Clinical Consultant at Health City",
+    detail:
+      "Mark is a registered Clinical Hypnotherapist, and also a registered mental health nurse. He was a senior lecturer of health and social care at a London University from 2003 to 2015. He has practiced as a Hypnotherapist since 2002. Mark’s background as a mental health practitioner has supported his work as a hypnotherapist, and enables him to apply a wider perspective to the broad range of conditions that he works with.",
+    cv: cvOfMark,
   },
   {
     id: 8,
@@ -203,6 +281,9 @@ const clinicalteamList = [
     name: "Kay Savage",
     designation:
       "Complementary, Holistic & Wellbeing Therapist and Clinical Consultant at Health City",
+    detail:
+      "Kay is a qualified Holistic Therapist and a specialist in Wellbeing Therapy.  She began her work with clients addressing Addiction related issues 13years ago.  Her training in Counselling and neuro linguistic programming (NLP) and Coaching has provided proven techniques in Goal Setting. Her work encompasses a series of sessions with children to those in their 90s with emotional and challenging behaviour, stress related issues, repetitive strain injuries, optimum pregnancy care during 2nd & 3rd Trimester,  in addition patients, families and carers living with cancer. Kay holds a higher national diploma (HND) and a BSc Honours in Business Information Technology. Various roles in Marketing for Prudential, Personnel Assistant & Human Resources - Recruiter for Deckchair.com, led her to seek a more supportive and rewarding way of life. Kay holds a higher national diploma (HND) and a BSc Honours in Business Information Technology. Various roles in Marketing for Prudential, Personnel Assistant & Human Resources - Recruiter for Deckchair.com, led her to seek a more supportive and rewarding way of life. Currently an Honourable Cancer & Palliative Care Volunteer at The Margaret Centre Whipps Cross Hospital and a Volunteer at The Mulberry Centre at West Middlesex University Hospital delivering a truly caring and unique form of support.",
+    cv: cvOfKay,
   },
   {
     id: 9,
@@ -210,6 +291,8 @@ const clinicalteamList = [
     name: "Dr. Francis Selemo",
     designation:
       "Cognitive Behavioural Psychotherapist (CBT), Chartered and HCPC regulated Clinical Psychologist",
+    detail:
+      "Dr. Benaliligha Francis Selemo is a consultant-grade doctor of mental health (specifically, clinical psychologist), with 8 out of his 10 UK national health (NHS) and private service users reporting good recovery. A co-author of more than 10 wellbeing books, plus 28 years therapy experience (1995 to date) and specialises in occupational and family medicine/healthcare. He is into the application of psychological techniques into almost any situation because of his experience as chartered psychologist, regulated clinical psychologist clinical, accredited Cognitive behavioural therapist, Behavioural Couple Therapy practitioner, Long Term Health Conditions practitioner, clinical service lead/manager in national health service (NHS)/private hospitals and charities in the UK and overseas and Chartered Management Institute's registered manager/ and subject matter expert. He does assessment and treatment of patients, wellbeing resilience, performance improvement, research/service evaluation, supervision, training, and consultation to patients, families, staff, managers, organisations and communities. He works in the area of mental health, including workplace, school, migration, relationships, complex trauma, depression, anxiety, addictions, hearing voices, delusions, challenging behaviours, physical conditions, cultural and faith issues. He is school governor and loves nature, farming, cooking, swimming, poetry, travelling, charity work .",
     cv: cvOfSelemo,
   },
   {
@@ -218,13 +301,18 @@ const clinicalteamList = [
     name: "Lindita Nerguti",
     designation:
       "Integrative Counsellor/Psychotherapist and Clinical Consultant at Health City",
+    detail:
+      "Lindita is a qualified integrative counsellor and psychotherapist with a postgraduate diploma. Lindita has considerable experience in providing high quality individual counselling using different approaches depending on the client's needs. Lindita possesses extensive expertise in working as a counsellor/psychotherapist as well as a welfare benefit advisor, dealing with different matters of vulnerable adults and families from deprived communities in diverse multicultural environments. Lindita helped them with financial issues, providing advice on housing, legal issues, health care, welfare rights, debts, education amongst other affairs.",
+    cv: cvOfLindita,
   },
   {
     id: 11,
     imgUrl: member11C,
     name: "Natalia Bailey",
     designation:
-      "Integrative Counsellor/Psychotherapist and Clinical Consultant at Health City",
+      "Senior Integrative Counsellor/Psychotherapist and Clinical Consultant at Health City",
+    detail:
+      "I'm an integrative counselllor and psychotherapist in private practice, and a lecturer at the University of East London on the MSc Integrative Counselling and Coaching programme. For more than 15 years I’ve worked as a counsellor and psychotherapist, and a supervisor in various settings including the NHS and in Education. I specialize in working with young people and spent 10 meaningful years at a creative and media college and Alternative Provision in east London. It is this experience as a counsellor and psychotherapist that has provided acute knowledge, understanding and insight into the specific challenges facing young people affected by youth violence in London. The impact of this lived experience is the focus of my current doctoral study at Chester University.As a lecturer on the MSc Integrative counselling and coaching programme at UeL, I support trainee practitioners to develop their counselling approaches and integrate coaching skills into their practice. I’ve been serving on the BACP Board of Governors as a Trustee since 2016, elected Chair in 2019 and re-elected Chair for a second term in November 2023.",
   },
   {
     id: 12,
@@ -232,6 +320,9 @@ const clinicalteamList = [
     name: "Caroline Howard",
     designation:
       "Cognitive Behavioural Psychotherapist & Clinical Consultant at Health City",
+    detail:
+      "Caroline is an accredited cognitive behavioural therapist, clinical supervisor and trainer. She is a registered mental health nurse and has worked as a Community Psychiatric Nurse and as a Community Mental Health Specialist Lecturer. Caroline is a co-founder of the Chinese Mental Health Association, set up in 1992. Caroline also extends her therapy work to the Chinese Communities.",
+    cv: cvOfCaroline,
   },
   {
     id: 13,
@@ -239,6 +330,8 @@ const clinicalteamList = [
     name: "Daniel Mirea",
     designation:
       "CBT Consultant, Senior Lecturer & Senior Clinical Consultant Partner at Health City",
+    detail:
+      "Daniel is a consultant cognitive behavioural (CBT) psychotherapist and senior lecturer at a UK University. He has been  working in mental health over 25 years. He has trained in all three waves of CBT, including Schema Therapy, Mindfulness and DBT.",
     cv: cvOfMIREA,
   },
   {
@@ -378,6 +471,26 @@ const clinicalteamList = [
     detail:
       "I have over 20 years experience in psychological assessment and treatment of clients.  I assess, understand and formulate a client's problem(s) as a clinical psychologist and cognitive  behavioural therapist.  I have clinical experience in different NHS settings in the United Kingdom as well as private settings.",
     cv: cvOfShuja,
+  },
+  {
+    id: 28,
+    imgUrl: member28C,
+    name: "Gail Bennett",
+    designation:
+      "Jungian Analyst and psychotherapist, Mindfulness Based Cognitive Therapist, Cognitive Behavioural Therapist, EMDR Practitioner, Mental Health Nurse, Lecturer, etc",
+    detail:
+      "Gail is a Jungian Analyst and psychotherapist. Gail originally trained as a mental health nurse and worked in acute, forensic and community mental health settings for 14 years. During her time working for the NHS she was trained in CBT and began to develop her skills as a psychotherapist. In 2006 she moved into education to work part time as a Senior Lecturer in Mental Health contributing to nursing and social work trainings whilst building a private practice as a therapist and clinical supervisor. In 2010 Gail graduated from the first intake of the master's programme in Mindfulness Based Cognitive Therapy (MBCT) led by Professor Mark Williams, following a desire to bridge between both Eastern and Western psychological approaches. In 2011 Gail returned to the NHS IAPT service to work as a clinical supervisor and specialist therapist. As the model of therapy service delivery changed, she decided to return to private practice whilst also working as a lecturer at Birkbeck on the Foundation Degree in Brief Psychodynamic Psychotherapy and CBT.",
+    cv: cvOfGail,
+  },
+  {
+    id: 29,
+    imgUrl: member29C,
+    name: "Monika Gos, CPsychol",
+    designation:
+      "Clinical and Counselling Psychologist, EMDR and Brainspotting Therapy Practitioner, Focusing Oriented Psychotherapists and Clinical Consultant in Health City",
+    detail:
+      "My way of working is rooted in the belief that every person has the inner capacity for growth and healing. Deep attunement to a person's inner experience opens the doors to the depths of self and to life changing steps. Some of my specialty areas are: Attachment and early trauma with all its psychological consequences, eating disorders, body psychotherapy, hard to treat psychological conditions, substance abuse, lack of meaning and direction in life, as well as self-fulfillment, performance enhancement etc. I am a Chartered Psychologist and an HCPC registered Clinical and Counselling Psychologist. I am also a Focusing-Oriented Psychotherapist and Focusing Trainer, and Brainspotting Trainer. I have studied: Focusing Oriented Relational Psychotherapy, Relational Psychoanalysis, EMDR, Core Energetics, Gestalt and NLP. I am a trainer and a clinical consultant at Health City.",
+    cv: cvOfMonika,
   },
 ];
 

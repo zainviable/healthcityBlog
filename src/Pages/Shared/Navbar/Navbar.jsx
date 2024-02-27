@@ -24,9 +24,7 @@ const Navbar = ({
     {
       id: 1,
       title: "WORKING HOURS",
-<<<<<<< HEAD
       description: "7 Days a Week from 9am- 6pm",
->>>>>>> 49f0572893c0918a66d74acde27f62fecad2aafe
       icon: MdOutlineQueryBuilder,
     },
     {

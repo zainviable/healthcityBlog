@@ -16,12 +16,15 @@ const Navbar = ({
 }) => {
   const [isSticky, setSticky] = useState(false);
   const noticeSectionRef = useRef(null);
+  const [topValue, setTopValue] = useState(
+    noticeSectionRef?.current?.offsetHeight
+  );
 
   const noticeList = [
     {
       id: 1,
       title: "WORKING HOURS",
-      description: "7 Days a Week from 6am - 9am",
+      description: "7 Days a Week from 9am- 6pm",
       icon: MdOutlineQueryBuilder,
     },
     {
@@ -85,21 +88,44 @@ const Navbar = ({
       <li className="nav-item">
         <NavLink to="contact-us">Contact Us</NavLink>
       </li>
-      <li className="nav-item">
+      <li className="nav-item tcFull">
         <NavLink to="/terms-conditions">Terms and Conditions</NavLink>
+      </li>
+      <li className="nav-item tcShort">
+        <NavLink to="/terms-conditions">T&C</NavLink>
       </li>
     </>
   );
 
+  // const handleScroll = () => {
+  //   if (
+  //     window.scrollY >
+  //     noticeSectionRef.current.offsetTop + noticeSectionRef.current.offsetHeight
+  //   ) {
+  //     setSticky(true);
+  //   } else {
+  //     setSticky(false);
+  //   }
+  // };
+
   const handleScroll = () => {
-    if (
-      window.scrollY >
-      noticeSectionRef.current.offsetTop + noticeSectionRef.current.offsetHeight
-    ) {
-      setSticky(true);
-    } else {
-      setSticky(false);
-    }
+    const offsetTop =
+      noticeSectionRef.current.offsetTop +
+      noticeSectionRef.current.offsetHeight;
+
+    const scrollHandler = () => {
+      if (window.scrollY > offsetTop) {
+        setSticky(true);
+        setTopValue(0);
+        // console.log("lg", topValue);
+      } else {
+        setSticky(false);
+        setTopValue(offsetTop - window.scrollY);
+        // console.log("sm", topValue);
+      }
+    };
+
+    requestAnimationFrame(scrollHandler);
   };
 
   useEffect(() => {
@@ -108,6 +134,8 @@ const Navbar = ({
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  // console.log("topValue", topValue);
 
   return (
     <nav>
@@ -146,10 +174,16 @@ const Navbar = ({
 
       {/* navbar */}
 
-      <div
+      {/* <div
         className={`navbar white-bg justify-center md:px-5 lg:px-24 py-2 ${
           isSticky ? "fixed top-0 z-[101] shadow-xl" : ""
         }`}
+      > */}
+      <div
+        className={`navbar white-bg justify-center md:px-5 lg:px-24 py-2 fixed ${
+          isSticky ? `z-[101] shadow-xl` : ""
+        }`}
+        style={{ top: topValue }}
       >
         <div className="navbar-start gap-1 w-3/5 lg:w-auto">
           <div className="dropdown">
@@ -176,6 +210,7 @@ const Navbar = ({
               {navList}
             </ul>
           </div>
+          {/* <Link to="/" className="w-[260px] md:w-[300px] h-[55px] md:h-[100px]"> */}
           <Link to="/" className="w-[260px] md:w-[300px] h-[55px] md:h-[100px]">
             <img
               src={logoImg}
@@ -193,7 +228,7 @@ const Navbar = ({
 
         <div className="navbar-end">
           <button
-            className="btn common-btn  text-[12px] md:text-[17px] w-[120px] md:w-[200px]"
+            className="btn common-btn  text-[12px] md:text-[16px] w-[120px] md:w-[180px]"
             onClick={() => {
               setIsBookAppoinmentModalOpen(true);
             }}

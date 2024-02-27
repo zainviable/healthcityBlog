@@ -34,7 +34,11 @@ const Main = () => {
           isTeamMenuOpen={isTeamMenuOpen}
           setIsTeamMenuOpen={setIsTeamMenuOpen}
         />
-        <div onClick={() => setIsTeamMenuOpen(false)} className="min-h-screen">
+        <div
+          onClick={() => setIsTeamMenuOpen(false)}
+          // className="min-h-screen"
+          className="min-h-screen mt-[73px] md:mt-[118px]"
+        >
           <Outlet setIsBookAppoinmentModalOpen={setIsBookAppoinmentModalOpen} />
         </div>
         <Footer />

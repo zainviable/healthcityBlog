@@ -8,6 +8,36 @@
 }
 
 .nav-item {
-  font-size: 15px;
-  margin: 4px 0;
+  font-size: 14px;
+  margin: 2px 0;
 }
+
+.tcFull {
+  display: block;
+}
+
+.tcShort {
+  display: none;
+}
+
+/* responsive style */
+@media only screen and (max-width: 1200px) {
+  .tcFull {
+    display: none;
+  }
+
+  .tcShort {
+    display: block;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .tcFull {
+    display: block;
+  }
+
+  .tcShort {
+    display: none;
+  }
+}
+
+/* responsive style */

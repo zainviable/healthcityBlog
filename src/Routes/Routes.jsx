@@ -9,6 +9,8 @@ import AboutUs from "../Pages/AboutUs/AboutUs";
 import QuizLayout from "../Layouts/QuizLayout";
 import ErrorPage from "../Pages/Shared/ErrorPage/ErrorPage";
 import TeamMemberDetail from "../Pages/TeamMemberDetail/TeamMemberDetail";
+import Webinar from "../Webinar/Webinar";
+import RegisterWebinarComponent from "../Webinar/RegisterWebinarComponent";
 
 export const router = createBrowserRouter([
   {
@@ -47,6 +49,14 @@ export const router = createBrowserRouter([
       {
         path: "/terms-conditions",
         element: <TermsAndConditions />,
+      },
+      {
+        path: "/health-city/webinar",
+        element: <Webinar />,
+      },
+      {
+        path: "/health-city/webinar/:id/:webinarName",
+        element: <RegisterWebinarComponent />,
       },
       // Wildcard route for error handling
       {

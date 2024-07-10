@@ -286,17 +286,13 @@ const Home = () => {
           <div className="w-full lg:w-1/2">
             <div className="w-full lg:w-[95%]">
               <h2 className="text-[22px] md:text-[30px] font-bold">
-                Health City is an occupational and family focused Counselling,
-                Therapy and Holistic Healthcare provider globally.
+                Health City is an Occupational and Family focused Counselling, Therapy, and Best Holistic Healthcare provider globally.
               </h2>
               <p className="text-[15px] lg:text-[17px]  my-3">
-                Our Mission is to contribute to improve your wellbeing now and
-                this may contribute to improve the wellbeing of your family, the
-                people around you, your community and your future generations.
-                Founded in 2007 in London, UK, we assist individuals and
-                families to attain emotional, physical, spiritual, financial,
-                housing, legal, etc. wellbeing to stay happily and safely at
-                home and workplace.
+                Our Mission is to contribute to improve your wellbeing now and this may contribute to improve the wellbeing of your family, 
+                the people around you, your community and your future generations. We assist individuals and Families to attain Emotional, 
+                Physical, Spiritual, Financial, Housing, Legal, Family Counseling, etc. We are the best holistic healthcare provider 
+                around the world to help people stay happy and safe at home and workplace.
               </p>
             </div>
           </div>
@@ -382,14 +378,11 @@ const Home = () => {
           <h2 className="common-title">Our Recovery Records</h2>
           <div className="mt-3">
             <p className="text-[18px] md:text-[20px] text-[#9b9b9b] font-bold">
-              90-98% of our clients reported satisfaction and good recovery on
-              feedback or self-report questionnaire
+              90-98% of our clients report satisfaction and good recovery in feedback or self-report questionnaires about us because we are the best healthcare provider.
             </p>
             <p className="text-[16px] lg:text-[18px]">
-              If you have medical insurance, contact us directly for fast-track
-              appointment. Don't wait to come to us through and being delayed by
-              third-party middlemen. We will support you in dealing with your
-              Insurer.
+              If you have medical insurance, contact us directly for fast-track appointment. Don't wait to come to us through and being delayed by third-party middlemen.
+              We will support you in dealing with your Insurer.
             </p>
           </div>
         </div>
@@ -450,13 +443,10 @@ const Home = () => {
             <div className="w-full md:w-3/5 lg:w-3/4">
               <div>
                 <p className="text-[16px] lg:text-[18px]">
-                  {`We can help you select the appropriate expert for your
-                  treatment or service regarding specialised consultants
-                  (including nationality and religion if it is important for
-                  you), level of intensity of treatment or services, number, and
-                  type of sessions (face to face, Skype, live chat, telephone,
-                  or Online). We guarantee the safety of personal information.
-                  Earn new colors of life`}
+                  {`We can help you select the appropriate expert and the best holistic healthcare provider specialist for your treatment
+                  or service regarding specialized consultants (including nationality and religion if it is important for you), 
+                  level of intensity of treatment or services, number, and type of sessions (face-to-face, Skype, live chat, telephone,
+                  or Online). We guarantee the safety of personal information. Earn new colors of life.`}
                 </p>
                 <p className="hidden md:block">
                   <small className="font-bold text-[#84c440]">

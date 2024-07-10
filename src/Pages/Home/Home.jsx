@@ -11,6 +11,8 @@ import book4Img from "../../assets/img/book_4.png";
 import bigSaleGif from "../../assets/img/big_sale.gif";
 import advertiseGif from "../../assets/img/advertise.gif";
 
+import webinar from "../../assets/img/webinar/baner.png";
+
 import {
   MdArrowRightAlt,
   FaHeadSideVirus,
@@ -32,7 +34,7 @@ import {
   FaHeadset,
   FaQuoteRight,
 } from "../../utils/Icons";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import ScrollTrigger from "react-scroll-trigger";
 import CountUp from "react-countup";
 import RequestAnAppoinment from "../../components/ModalComponent/RequestAnAppoinment";
@@ -221,9 +223,8 @@ const Home = () => {
     ),
     customPaging: (i) => (
       <div
-        className={`mx-3 w-[24px] h-[4px] ${
-          i === activeDot ? "deep-green-bg" : "bg-[#ddd]"
-        } mt-3`}
+        className={`mx-3 w-[24px] h-[4px] ${i === activeDot ? "deep-green-bg" : "bg-[#ddd]"
+          } mt-3`}
       ></div>
     ),
     responsive: [
@@ -335,6 +336,25 @@ const Home = () => {
         </div>
       </section>
       {/* e-Books */}
+
+      {/* Training section start */}
+      <section style={{
+        backgroundImage: `url(${webinar})`,
+        backgroundSize: "content",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+      }} className="w-full h-[347px] ">
+        <div className="px-5 lg:px-24 py-8 w-full h-full bg-[#5c9516be] flex items-center">
+          <div className="text-[#fff] flex flex-col gap-5 ">
+            <h1 className="text-[50px] leading-tight font-bold">Transform Your Career with Expert-Led <br /> Training Programs</h1>
+            <p className="text-[20px]">Discover our range of live webinars, self-taught online courses, and in-person training designed to elevate your skills.</p>
+            <Link to="/health-city/webinar">
+              <button className="bg-[#01143A] py-[10px] px-[15px] w-[200px] rounded-3xl">Explore Our Training</button>
+            </Link>
+          </div>
+        </div>
+      </section>
+      {/* Training section end */}
 
       {/* About Us */}
       <section>

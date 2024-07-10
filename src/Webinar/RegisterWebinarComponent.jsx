@@ -69,7 +69,7 @@ const RegisterWebinarComponent = () => {
                 <p>Seconds</p>
               </div>
             </div>
-          </div>                        
+          </div>
         </div>
       </section>
 

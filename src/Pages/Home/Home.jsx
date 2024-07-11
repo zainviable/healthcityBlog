@@ -393,9 +393,9 @@ const Home = () => {
       <section id="service-section">
         <div className="my-16 px-5 lg:px-24">
           <div className="deep-green-bg off-white-text p-3">
-            <h2 className="text-[32px] md:text-[40px] text-center">
+            <h3 className="text-[32px] md:text-[40px] text-center">
               WHAT ARE YOU LOOKING FOR ?
-            </h2>
+            </h3>
             <h2 className="common-title text-center">Our Services</h2>
             <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               {serviceList?.map((service) => (

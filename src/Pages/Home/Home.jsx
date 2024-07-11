@@ -377,9 +377,9 @@ const Home = () => {
         <div className="my-14 px-5 lg:px-24">
           <h2 className="common-title">Our Recovery Records</h2>
           <div className="mt-3">
-            <p className="text-[18px] md:text-[20px] text-[#9b9b9b] font-bold">
+            <h4 className="text-[18px] md:text-[20px] text-[#9b9b9b] font-bold">
               90-98% of our clients report satisfaction and good recovery in feedback or self-report questionnaires about us because we are the best healthcare provider.
-            </p>
+            </h4>
             <p className="text-[16px] lg:text-[18px]">
               If you have medical insurance, contact us directly for fast-track appointment. Don't wait to come to us through and being delayed by third-party middlemen.
               We will support you in dealing with your Insurer.

@@ -27,7 +27,7 @@ const Team = () => {
   const bannerContent = {
     title: "Meet The Team",
     description:
-      "Health City's core team and its associates include qualified psychologists, therapists, nurses, doctors and other professionals, as well as, former service users. They have relevant training, skills, and experiences culturally and professionally. Below are just some of our team members. Behind the experienced directors and managers, stand a number of awesome, dedicated non-executive directors and advisors, clinicians, University researchers and client support staff who make us all look good and achieving",
+      "Health City's core team and its associates include qualified Clinical Psychologist, Therapists, Nurses, Doctors and Other Professionals, as well as, former service users. They have relevant Training, Skills, and experiences culturally and professionally. Below are just some of our team members. Behind the experienced Directors and Managers, stand a number of awesome, dedicated non-executive directors and advisors, clinicians, University researchers and client support staff who make us all look good and achieving",
   };
 
   useEffect(() => {

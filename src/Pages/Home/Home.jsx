@@ -3,7 +3,7 @@ import "./Home.css";
 import bannerImg from "../../assets/img/banner.png";
 import selemoImg from "../../assets/img/Dr.Francis-Selemo-Best-holistic-healthcare-provider.png";
 
-import book1Img from "../../assets/img/book_1.png";
+import book1Img from "../../assets/img/the-best-holistic-healthcare-provider.png";
 import book2Img from "../../assets/img/book_2.png";
 import book3Img from "../../assets/img/book_3.png";
 import book4Img from "../../assets/img/book_4.png";

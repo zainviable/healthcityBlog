@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import webinar from "../assets/img/webinar/girl_with_hade.jfif";
 import patreon_icon from "../assets/img/webinar/patreon_icon.png";
-import selemo from "../assets/img/selemo.png";
+import selemo from "../assets/img/Dr.Francis-Selemo-Best-holistic-healthcare-provider.png";
 import patreonIcon from "../assets/img/webinar/patreon_icon.png";
 import patreon_img from "../assets/img/webinar/patreon.png";
 import student_img from "../assets/img/webinar/student.png";

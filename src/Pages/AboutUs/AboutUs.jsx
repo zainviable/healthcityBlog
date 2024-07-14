@@ -2,25 +2,23 @@ import React, { useEffect } from "react";
 import CommonBanner from "../../components/CommonBanner/CommonBanner";
 import { Link } from "react-router-dom";
 
-import trustImg from "../../assets/img/trust.png";
-import webAppImg from "../../assets/img/web_app.png";
-import charitiesImg from "../../assets/img/charities.png";
+import trustImg from "../../assets/img/Mental-health-support.png";
+import webAppImg from "../../assets/img/Mental_health_support_app.png";
+import charitiesImg from "../../assets/img/Mental_health_support_app.png";
 
-import agency1Img from "../../assets/img/a1.jpg";
-import agency2Img from "../../assets/img/a2.png";
-import agency3Img from "../../assets/img/a3.png";
-import agency4Img from "../../assets/img/a4.jpg";
-import agency5Img from "../../assets/img/a5.jpg";
-import agency6Img from "../../assets/img/a6.png";
-import agency7Img from "../../assets/img/a7.jpg";
-import agency8Img from "../../assets/img/a8.jpg";
-import agency9Img from "../../assets/img/a9.png";
-
-import office1Img from "../../assets/img/office_1.png";
-import office2Img from "../../assets/img/office_2.png";
-import office3Img from "../../assets/img/office_3.jpg";
-import office4Img from "../../assets/img/office_4.jpg";
-
+import agency1Img from "../../assets/img/Mental health support a1.jpg";
+import agency2Img from "../../assets/img/Mental health support a2.png";
+import agency3Img from "../../assets/img/Mental health support a3.png";
+import agency4Img from "../../assets/img/Mental health support a4.jpg";
+import agency5Img from "../../assets/img/Mental health support a5.jpg";
+import agency6Img from "../../assets/img/Mental health support a6.png";
+import agency7Img from "../../assets/img/Mental health support a7.jpg";
+import agency8Img from "../../assets/img/Mental health support a8.jpg";
+import agency9Img from "../../assets/img/Mental health support.png";
+import office1Img from "../../assets/img/mental-health-supportteam.png";
+import office2Img from "../../assets/img/Mental health support office_2.png";
+import office3Img from "../../assets/img/Mental health support office_3.jpg";
+import office4Img from "../../assets/img/Mental health support office_4.jpg";
 import Marquee from "react-fast-marquee";
 import Slider from "react-slick";
 

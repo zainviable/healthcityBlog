@@ -7,7 +7,7 @@ import {
   MdKeyboardArrowDown,
 } from "../../../utils/Icons";
 import { Link, NavLink } from "react-router-dom";
-import logoImg from "../../../assets/img/logo.jpg";
+import logoImg from "../../../assets/img/healthcityuk.jpg";
 
 const Navbar = ({
   setIsBookAppoinmentModalOpen,

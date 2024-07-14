@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
-import bannerImg from "../../assets/img/banner.png";
+import bannerImg from "../../assets/img/best-holistic-healthcare-provider.png";
 import selemoImg from "../../assets/img/Dr.Francis-Selemo-Best-holistic-healthcare-provider.png";
 
 import book1Img from "../../assets/img/the-best-holistic-healthcare-provider.png";
-import book2Img from "../../assets/img/book_2.png";
-import book3Img from "../../assets/img/book_3.png";
-import book4Img from "../../assets/img/book_4.png";
+import book2Img from "../../assets/img/the-best-health-care-provider-worldwide.png";
+import book3Img from "../../assets/img/the-best-health-care-provider.png";
+import book4Img from "../../assets/img/the-best-healthcare-provider-uk.png";
 
 import bigSaleGif from "../../assets/img/Best-holistic-healthcare-provider-big_sale.gif";
 import advertiseGif from "../../assets/img/advertise-Best-healthcare-provider.gif";

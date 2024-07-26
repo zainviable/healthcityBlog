@@ -223,7 +223,7 @@ const Navbar = ({
           </Link>
         </div>
 
-        <div className="navbar-center justify-center w-[57%] hidden lg:flex">
+        <div className="navbar-center justify-center w-[65%] hidden lg:flex">
           <ul className="menu menu-horizontal items-center gap-1 font-medium">
             {navList}
           </ul>
@@ -231,7 +231,7 @@ const Navbar = ({
 
         <div className="navbar-end">
           <button
-            className="btn common-btn  text-[12px] md:text-[16px] w-[120px] md:w-[180px]"
+            className="btn common-btn  text-[12px] md:text-[16px] w-[110px] md:w-[175px]"
             onClick={() => {
               setIsBookAppoinmentModalOpen(true);
             }}

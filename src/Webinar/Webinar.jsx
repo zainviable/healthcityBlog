@@ -1,8 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import webinar from "../assets/img/webinar/traing.jfif";
 import WebinarsCardComponent from './WebinarsCardComponent';
+import { GetAllWebinar } from '../utils/apiRequest';
 
 const Webinar = () => {
+
+    const [webinars, setWebinars] = useState([])
+
+    useEffect(() => {
+        (async () => {
+            let webinarValue = await GetAllWebinar();
+
+            setWebinars(webinarValue);
+        }
+        )()
+    }, []);
+
+    console.log("Webinars", webinars);
     return (
         <div className=''>
             {/* Upcoming Webinars banner section */}
@@ -27,12 +41,14 @@ const Webinar = () => {
                     <h1 className='text-[40px] font-bold text-[#01143A]'>Upcoming Webinars</h1>
 
                     <div className="my-[50px] flex items-center justify-center gap-12 flex-wrap w-full">
-                        <WebinarsCardComponent />
-                        <WebinarsCardComponent />
-                        <WebinarsCardComponent />
-                        <WebinarsCardComponent />
-                        <WebinarsCardComponent />
-                        <WebinarsCardComponent />
+                        {
+                            webinars && webinars?.map(item => (
+                                <div key={item._id}>
+                                    <WebinarsCardComponent webinar={item} />
+
+                                </div>
+                            ))
+                        }
 
                     </div>
 

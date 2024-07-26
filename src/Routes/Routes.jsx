@@ -11,6 +11,8 @@ import ErrorPage from "../Pages/Shared/ErrorPage/ErrorPage";
 import TeamMemberDetail from "../Pages/TeamMemberDetail/TeamMemberDetail";
 import Webinar from "../Webinar/Webinar";
 import RegisterWebinarComponent from "../Webinar/RegisterWebinarComponent";
+import Editor from "../Webinar/Editor";
+import Checkout from "../Webinar/Payment/Checkout";
 
 export const router = createBrowserRouter([
   {
@@ -55,6 +57,10 @@ export const router = createBrowserRouter([
         element: <Webinar />,
       },
       {
+        path: "/health-city/webinar/editor",
+        element: <Editor />,
+      },
+      {
         path: "/health-city/webinar/:id/:webinarName",
         element: <RegisterWebinarComponent />,
       },
@@ -64,6 +70,10 @@ export const router = createBrowserRouter([
         element: <ErrorPage />,
       },
     ],
+  },
+  {
+    path: "/health-city/webinar/checkout",
+    element: <Checkout />,
   },
   {
     path: "/quiz",

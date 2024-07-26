@@ -30,17 +30,17 @@ const Reviews = () => {
     {
       id: 4,
       title: "LinkedIn",
-      url: "https://www.linkedin.com/in/healthcityuk/",
+      url: "https://uk.linkedin.com/in/health-city-811349108",
     },
     {
       id: 5,
-      title: "Youtube",
-      url: "https://www.youtube.com/@healthcityuk",
+      title: "Upwork",
+      url: "https://www.upwork.com/nx/wm/client/contracts?selectedSortBy=Start%20date&orderIsAsc=false&contractStatus=ended",
     },
     {
       id: 6,
       title: "Facebook",
-      url: "https://www.facebook.com/twinbrain.healthcityuk",
+      url: "https://www.facebook.com/healthcity.org.uk1/",
     },
   ];
 
@@ -54,10 +54,9 @@ const Reviews = () => {
       <section className="reviews-banner bg-[#01143a90]">
         <div className="h-[300px]  px-5 lg:px-24 flex items-center">
           <h2 className="off-white-text text-[16px] md:text-[24px]">
-            Have a look at what other people have said about our services. 
-            We take your feedback seriously and will celebrate the good and 
-            work to improve on the gaps you have identified about our services-
-            Family Counseling, Emotional, Physical, Spiritual, Financial, Housing, Legal, etc.
+            Have a look at what other people have said about our services. We
+            take your feedback serious and shall celebrate the good ones and
+            shall act to improve on the areas of gap you identified.
           </h2>
         </div>
       </section>
@@ -91,12 +90,13 @@ const Reviews = () => {
         <div className="px-5 lg:px-24 py-10">
           <h2 className="common-title text-center">If you are not satisfied</h2>
           <p className="font-medium">
-            If you are not satisfied or if things don't go well with your first counseling
-            or therapy session, we are here to help you access our other professionals with
-            more advanced services on demand or signpost you to other services( Family Counseling,
-            Physical, Spiritual, Financial, Housing, Legal, etc). It's wonderful that you've taken
-            a big step to access health care, so don't give up on finding the right professional 
-            who will be able to give you what you need to cope or recover. See our{" "}
+            If you are not happy with or if things did not go right with your
+            first Counselling or therapy session, we are here to support you to
+            access another of our professionals or to signpost you to another
+            service. It is wonderful that you have taken a major step to access
+            health support, therefore, do not give up looking for the right
+            professional who is able to give you what you need to cope or
+            recover. See our{" "}
             <Link to="/terms-conditions" className="text-[#84c440]">
               Terms and Conditions
             </Link>

@@ -27,9 +27,9 @@ import Slider from "react-slick";
 const AboutUs = () => {
   const bannerContentIntro = {
     title:
-      "Health City is an Occupational and Family focused counseling, Therapy, Mental Health Support and Holistic Healthcare Provider Globally.",
+      "Health City is an occupational and family focussed Counselling, Therapy and Holistic Healthcare provider globally",
     description:
-      "Our Mission is to contribute to improve your wellbeing now and this may contribute to improve the wellbeing of your family, the people around you, your community and your future generations. Founded in 2007 in London, UK. we assist individuals and families to attain emotional, Physical, Spiritual, Financial, Housing, Legal, and Mental Health Support, etc., to stay happily and safely at home and workplace.",
+      "Our Mission is to contribute to improve your wellbeing now and this may contribute to improve the wellbeing of your family, the people around you, your community and your future generations. Founded in 2007 in London, UK, we assist individuals and families to attain emotional, physical, spiritual, financial, housing, legal, etc wellbeing to stay happily and safely at home and workplace.",
   };
 
   const bannerContentTreat = {
@@ -111,10 +111,13 @@ const AboutUs = () => {
           <h2 className="common-title">WHY CHOOSE US</h2>
           <ul className="list-disc ml-6">
             <li>
-              Our re-admission/re-referral rate is very low about 1%. This is because we believe people 
-              should be assisted in learning a lot of coping techniques to enable them break the forever cycle of 
-              returning to treatment unless their condition is yet to have a known human or spiritual solution. 
-              Our clients and the general public have free access to a mental health support wellbeing resource app and web app (
+              Our re-admission/re-referral rate is very low about 1%. This is
+              because we believe people should be assisted to learn a lot of
+              coping techniques to enable them break the forever cycle of
+              returning to treatment unless their condition is yet to have a
+              known human or spiritual solution. Our clients and the general
+              public have free access to self-help mental wellbeing resource app
+              and web app (
               <a
                 href="https://twinbrain.org"
                 target="_blank"
@@ -125,25 +128,33 @@ const AboutUs = () => {
               ) to prevent, reduce or manage lapse/relapse or setback.
             </li>
             <li>
-              Money is only a by-product for us when we strive to do the right and the best thing for our clients 100% each time.
-              We ask ourselves if this client or customer is my family member, how far will I go to assist them? We cannot offer 
-              to other families what is not good for us.
+              Money is only a by -product for us when we strive to do the right
+              and the best thing for our clients 100% each time. We ask
+              ourselves- if this client or customer is my family member, how far
+              will I go to assist them? We cannot offer to other families what
+              is not good for us.
             </li>
             <li>
-              Our professionals have good experience working in the UK National Health Service (NHS) and/or the voluntary healthcare system.
+              Our professionals have good experience working in the UK National
+              Health Service (NHS) and/or the voluntary healthcare system.
             </li>
             <li>
-              If we cancelled one of your appointments, then you are entitled to one free appointment. This is fair because we charge you for unattended appointments.
+              If we cancelled one of your appointments, then you are entitled to
+              one free appointment. This is fair because we charge you for
+              unattended appointments.
             </li>
             <li>
-              We operate on Social Enterprise Principles. We put some of our profits and resources back to help people and communities.
+              We operate on Social Enterprise Principles. We put some of our
+              profits and resources back to help people and communities.
             </li>
             <li>
-              The full fee is paid by those who can afford and people who can't pay full fees we offer complimentary or discounted services.
+              The full fee is paid by those who can afford and people who can't
+              pay full fees we offer complimentary or discounted services.
             </li>
             <li>
-              We are not like some private health care providers who are only focused on providing care service and profit making.
-              We are the best healthcare provider with mental health support. Read more about our Charities and Community activities  (
+              We are not like some private health care providers who are only
+              focused on providing care service and profit making. Read more
+              about our Charities and Community activities (
               <a
                 href="https://gratis-christi-trust.com"
                 target="_blank"
@@ -178,25 +189,30 @@ const AboutUs = () => {
             <div className="w-full lg:w-3/5">
               <h2 className="text-[22px] font-bold">Gratis Christi Trust</h2>
               <p className="my-3">
-                This is the UK registered charity that is a partner of Health City and part of the Enaikidigha healthcare group.
+                This is the UK registered charity that is a partner of Health
+                City and part of Enaikidigha healthcare group.
               </p>
               <ul>
                 <li>
-                 It funds complimentary or discounted Counselling and therapy services for people who can't pay full fees. To benefit from this offer,
-                  you have to be introduced or recommended to Health City. 
-                       (
+                  It funds complimentary or discounted Counselling and therapy
+                  service for people who can't pay full fees. To benefit from
+                  this offer, you have to be introduced or recommended to Health
+                  City. (
                   <Link to="/terms-conditions" className="text-blue-500">
                     Terms and Conditions
                   </Link>{" "}
                   apply).
                 </li>
                 <li>
-                  It offers financial and other resource assistance on a need basis to people, especially former mental health support service users of Health City.
+                  It offers financial and other resource assistance on the need
+                  basis to people, especially former service users of Health
+                  City.
                 </li>
                 <li>
-                  People who have completed an episode of care at Health City or are waiting for authorization or are delayed for authorization for
-                  extra sessions may also be offered at least one complementary follow-up Counselling or therapy session
-                   (
+                  People who have completed an episode of care at Health City or
+                  are waiting for authorization or are delayed for authorization
+                  for extra sessions may also be offered at least one
+                  complimentary follow-up Counselling or therapy session (
                   <Link to="/terms-conditions" className="text-blue-500">
                     Terms and Conditions
                   </Link>{" "}
@@ -224,9 +240,10 @@ const AboutUs = () => {
                 Twin Brain app and web app
               </h2>
               <p className="my-3">
-                These offer free resources that may assist you in acquiring some 
-                self-help coping techniques to reduce distress from emotional problems,
-                mental health support, and may contribute to improving your health and general well-being. Download at
+                These offer free resource that may assist you to acquire some
+                self-help coping techniques to reduce distress from emotional
+                problems and may contribute to improving your health and general
+                well-being. Download at
               </p>
               <a
                 href="https://twinbrain.org"
@@ -253,12 +270,13 @@ const AboutUs = () => {
                 Other Charities and Community Projects
               </h2>
               <p className="my-3">
-                We work closely with and support activities of local and mental health,
-                as well as, community professionals and groups by donating resources or
-                offering our expertise in specific areas of community needs. We have given
-                limited financial and generous professional skills and mental health support 
-                to people in Nigeria, Liberia, Ukraine, UK, etc, and are open to supporting
-                people in other countries on a need basis and subject to our available resources.
+                We work closely with and support activities of local health, as
+                well as, community professionals and groups by donating
+                resources or offering our expertise in specific areas of
+                community needs. We have given limited financial and generous
+                professional skills support to people in Nigeria, Liberia,
+                Ukraine, UK etc and are open to give support to people in other
+                countries on need basis and subject to our available resources.
               </p>
               <Link to="/contact-us" className="btn common-btn mt-3">
                 Contact Us

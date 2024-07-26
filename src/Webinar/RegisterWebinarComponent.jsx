@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import webinar_image from "../assets/img/webinar/girl_with_hade.jfif";
 import patreon_icon from "../assets/img/webinar/patreon_icon.png";
-import selemo from "../assets/img/Dr.Francis-Selemo-Best-holistic-healthcare-provider.png";
+import selemo from "../assets/img/selemo.png";
 import patreonIcon from "../assets/img/webinar/patreon_icon.png";
 import toast from "react-hot-toast";
 import patreon_img from "../assets/img/webinar/patreon.png";

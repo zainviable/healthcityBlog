@@ -6,7 +6,7 @@ import member4NC from "../assets/img/non-clinical/seikegba.jpg";
 import member5NC from "../assets/img/non-clinical/onyinye.jpg";
 
 // ***** clinical team image *****
-import member1C from "../assets/img/clinical/Dr.Francis-Selemo-Best-holistic-healthcare-provider.png";
+import member1C from "../assets/img/clinical/selemo.png";
 import member2C from "../assets/img/clinical/raffaella.png";
 import member3C from "../assets/img/clinical/iiaria.jpg";
 import member4C from "../assets/img/clinical/alina.jpeg";

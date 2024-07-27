@@ -11,11 +11,12 @@ import { GetSignalWebinar } from '../utils/apiRequest';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import store from '../redux/store';
 import { SetAccountType, SetStudentData, SetUserData, SetWebinar } from '../redux/slice/webinarSlice';
+import { webinarData } from '../utils/data';
 
 const RegisterWebinarComponent = () => {
 
   let { id, webinarName } = useParams();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const [webinar, setWebinar] = useState(null)
   const [webinarDate, setWebinarDate] = useState([])
@@ -51,7 +52,8 @@ const RegisterWebinarComponent = () => {
 
   useEffect(() => {
     (async () => {
-      let webinarValue = await GetSignalWebinar(id);
+      // let webinarValue = await GetSignalWebinar(id);
+      let webinarValue = webinarData[0];
 
       setWebinar(webinarValue);
       if (webinarValue) {
@@ -60,7 +62,8 @@ const RegisterWebinarComponent = () => {
         if (webinar_outline) {
           webinar_outline.innerHTML = webinarValue?.description
           // console.log("webinar", JSON.parse(webinarValue?.webinar_date) );
-          let time = JSON.parse(webinarValue?.webinar_date);
+          let time = webinarValue?.webinar_date;
+          // let time = JSON.parse(webinarValue?.webinar_date);
           setWebinarDate(time);
           setWebinarTime({ ...time[0], value: time[0].time[0] });
           // console.log('dsf', time[0]);
@@ -262,10 +265,10 @@ const RegisterWebinarComponent = () => {
         </div>
 
         <div className="w-full relative flex items-center justify-center my-[50px]">
-          <div className="bg-[#fff] absolute top-0 p-5 rounded-2xl text-center w-[100%] lg:w-[60%]">
+          <div className="bg-[#fff] absolute top-0 p-5 rounded-2xl text-center w-[100%] lg:w-[70%]">
             <h4 className='text-[30px] font-bold mb-6'>Register</h4>
 
-            <div className="flex items-center justify-between flex-wrap flex-col lg:flex-row gap-5">
+            <div className="flex items-center justify-between flex-wrap flex-col lg:flex-row gap-3">
               <p className='text-[20px] font-bold'>Register As</p>
 
               <button onClick={handelStudentFunction} className={` flex items-center justify-center gap-3 py-[10px] px-[15px] w-[200px] rounded-xl font-semibold ${student.isStudent ? 'bg-[#ffffff] border-2 border-[#262E3D]' : 'bg-[#262E3D] text-[#fff]'}`}>
@@ -294,7 +297,7 @@ const RegisterWebinarComponent = () => {
 
           {/* student form */}
           {
-            student.isStudent && <div className="w-[100%] lg:w-[550px] flex items-center justify-center flex-col  gap-3 mt-[180px] lg:mt-0">
+            student.isStudent && <div className="w-[100%] lg:w-[580px] flex items-center justify-center flex-col  gap-3 mt-[180px] lg:mt-0">
               <div className="p-3">
                 <div className="flex items-center justify-between flex-col lg:flex-row gap-5">
                   <div className="w-full">
@@ -329,7 +332,7 @@ const RegisterWebinarComponent = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center justify-between flex-col lg:flex-row gap-5">
+                <div className="flex items-center justify-between flex-col lg:flex-row gap-5 mt-3">
                   <div className="w-full">
                     <p className="text-[15px] font-semibold">Full Name <span className="text-[#c43131]">*</span></p>
                     <input type="text" value={student?.full_name} onChange={e => setStudent({ ...student, full_name: e.target.value })} placeholder='Full name' className='w-full lg:w-[260px] bg-[#E6E8EC] rounded-md h-[45px] px-3 outline-none' />
@@ -340,21 +343,21 @@ const RegisterWebinarComponent = () => {
                   </div>
                 </div>
 
-                <div className="">
+                <div className="mt-3">
                   <div className="">
                     <p className="text-[15px] font-semibold">Institution <span className="text-[#c43131]">*</span></p>
                     <input type="text" value={student?.institution} onChange={e => setStudent({ ...student, institution: e.target.value })} placeholder='Name of Institution/School' className='w-full bg-[#E6E8EC] rounded-md h-[45px] px-3 outline-none' />
                   </div>
                 </div>
 
-                <div className="">
+                <div className="mt-3">
                   <div className="">
                     <p className="text-[15px] font-semibold">Full Address <span className="text-[#c43131]">*</span></p>
                     <input type="text" value={student?.address} onChange={e => setStudent({ ...student, address: e.target.value })} placeholder='Write your full address' className='w-full bg-[#E6E8EC] rounded-md h-[45px] px-3 outline-none' />
                   </div>
                 </div>
 
-                <div className="w-full flex items-center gap-5 justify-between flex-wrap lg:flex-row">
+                <div className="flex items-center justify-between flex-col lg:flex-row gap-5 mt-3">
                   <div className="w-full">
                     <p className="text-[15px] font-semibold">Graduation year <span className="text-[#c43131]">*</span></p>
                     <input type="text" value={student?.graduation_year} onChange={e => setStudent({ ...student, graduation_year: e.target.value })} placeholder='2024' className='w-full lg:w-[260px] bg-[#E6E8EC] rounded-md h-[45px] px-3 outline-none' />
@@ -507,7 +510,8 @@ const RegisterWebinarComponent = () => {
         <h1 className='py-8 text-center text-[30px] font-bold'>FACILITATOR</h1>
         <div className="grid lg:grid-cols-2">
           <div className="flex items-center justify-center">
-            <img src={`http://52.52.171.224:8000/${webinar?.facilitator_image}`} className='w-[350px]' alt="FACILITATOR" />
+            <img src={webinar?.facilitator_image} className='w-[350px]' alt="FACILITATOR" />
+            {/* <img src={`http://52.52.171.224:8000/${webinar?.facilitator_image}`} className='w-[350px]' alt="FACILITATOR" /> */}
           </div>
           <div className="p-10">
             <h5 className='text-[15px] font-semibold my-5'>{webinar?.facilitator_title}</h5>

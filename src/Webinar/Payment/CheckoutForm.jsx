@@ -33,7 +33,7 @@ const CheckoutForm = ({ type, data, title }) => {
                 case "succeeded":
                     // setMessage("Payment succeeded!");
                     toast.success("Payment succeeded!");
-
+                    console.log("Payment succeeded!");
                     break;
                 case "processing":
                     toast.loading("Your payment is processing.")
@@ -79,7 +79,7 @@ const CheckoutForm = ({ type, data, title }) => {
 
         setIsLoading(true);
 
-        const {error, paymentIntent} = await stripe.confirmPayment({
+        const { error, paymentIntent } = await stripe.confirmPayment({
             elements,
             confirmParams: {
                 // Make sure to change this to your payment completion page
@@ -98,7 +98,7 @@ const CheckoutForm = ({ type, data, title }) => {
         }
 
         setIsLoading(false);
-        await handleSuccessfulPayment();
+        // await handleSuccessfulPayment();
     };
 
     const paymentElementOptions = {

@@ -88,7 +88,8 @@ const Checkout = () => {
                         <IoMdArrowRoundBack className="text-[20px]" />
                     </div>
                     <div className="flex items-center justify-center my-5">
-                        <img className="w-[250px]" src={`http://52.52.171.224:8000/${webinarItem?.webinar_banner}`} alt="" />
+                        <img className="w-[250px]" src={webinarItem?.webinar_banner} alt="" />
+                        {/* <img className="w-[250px]" src={`http://52.52.171.224:8000/${webinarItem?.webinar_banner}`} alt="" /> */}
                     </div>
                     <h1 className="text-[22px] font-semibold">{webinarItem?.title}</h1>
                     <div className="mt-4">
@@ -111,7 +112,8 @@ const Checkout = () => {
 
                 <div className="mt-[50px]">
                     <div className="flex items-center justify-center">
-                        <img src={`http://52.52.171.224:8000/${webinarItem?.facilitator_image}`} alt="" />
+                        <img src={webinarItem?.facilitator_image} alt="" />
+                        {/* <img src={`http://52.52.171.224:8000/${webinarItem?.facilitator_image}`} alt="" /> */}
                     </div>
 
                     <div className="p-10">

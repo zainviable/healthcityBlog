@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import webinar from "../assets/img/webinar/traing.jfif";
 import WebinarsCardComponent from './WebinarsCardComponent';
 import { GetAllWebinar } from '../utils/apiRequest';
+import { webinarData } from '../utils/data';
 
 const Webinar = () => {
 
@@ -42,12 +43,18 @@ const Webinar = () => {
 
                     <div className="my-[50px] flex items-center justify-center gap-12 flex-wrap w-full">
                         {
-                            webinars && webinars?.map(item => (
+                            webinarData && webinarData?.map(item => (
                                 <div key={item._id}>
                                     <WebinarsCardComponent webinar={item} />
 
                                 </div>
                             ))
+                            // webinars && webinars?.map(item => (
+                            //     <div key={item._id}>
+                            //         <WebinarsCardComponent webinar={item} />
+
+                            //     </div>
+                            // ))
                         }
 
                     </div>

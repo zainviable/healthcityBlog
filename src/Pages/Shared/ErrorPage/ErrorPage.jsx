@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import errorImg from "../../../assets/img/error_page.png";
+import errorImg from "../../../assets/img/healthcityuk_error_page.png";
 import { Link } from "react-router-dom";
 
 const ErrorPage = () => {

@@ -19,7 +19,7 @@ const AllArticles = ({ isTagSelected }) => {
   const getAllArticleReq = async () => {
     try {
       const res = await axios.get(
-        `${BASE_URL}/blogs?filters[viewCount][$gt]=5&sort[0]=featured:desc&${POPULATE_QUERY}${multiTagQueryById(
+        `${BASE_URL}/blogs?sort[0]=createdAt:desc&${POPULATE_QUERY}${multiTagQueryById(
           isTagSelected
         )}`
       );

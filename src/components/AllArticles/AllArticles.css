@@ -124,6 +124,7 @@
 .common-article-img img {
   width: 100%;
   border-radius: 16px;
+  object-fit: cover;
 }
 .common-article-content {
   width: 60%;

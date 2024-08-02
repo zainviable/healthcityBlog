@@ -39,7 +39,7 @@ const AllArticles = ({ isTagSelected }) => {
     //   "/src/assets/img/popular-image.png"
     // );
   };
-
+  console.log("hello articles", allArticles);
   return (
     <section className="all-articles" id="all-articles-section">
       <div className="custom-container">
@@ -66,7 +66,7 @@ const AllArticles = ({ isTagSelected }) => {
                 </div>
                 <div className="common-article-content">
                   <h5 className="blog-category">
-                    {article.attributes.tags.data[0]?.attributes.name}
+                    {article.attributes.categories.data[0]?.attributes.name}
                   </h5>
 
                   <h3 className="blog-title">{article.attributes.title}</h3>

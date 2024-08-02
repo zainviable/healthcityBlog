@@ -41,7 +41,9 @@ const PopularArticles = () => {
   const getPopularArticleReq = async () => {
     try {
       const res = await axios.get(
-        `${BASE_URL}/blogs?pagination[pageSize]=5&sort[0]=viewCount:desc&${POPULATE_QUERY}`
+        //`${BASE_URL}/blogs?pagination[pageSize]=5&sort[0]=viewCount:desc&${POPULATE_QUERY}`
+        `${BASE_URL}/blogs?pagination[pageSize]=5&filters[viewCount][$gt]=1&sort[0]=featured:desc&${POPULATE_QUERY}`
+        //`blogs?pagination[pageSize]=5&filters[viewCount][$gt]=1&sort[0]=featured:desc`
       );
       setPopularArticles(res.data.data); // Adjust based on the actual response structure
       console.log("blogs data ==>>>", res.data);

@@ -3,6 +3,8 @@ import Main from "../Layouts/Main";
 import Home from "../Pages/Home/Home";
 import Reviews from "../Pages/Reviews/Reviews";
 import Team from "../Pages/Team/Team";
+import Blogs from "../Pages/Blogs/blog";
+import BlogDetail from "../Pages/Blogs/blogDetail";
 import TermsAndConditions from "../Pages/TermsAndConditions/TermsAndConditions";
 import ContactUs from "../Pages/ContactUs/ContactUs";
 import AboutUs from "../Pages/AboutUs/AboutUs";
@@ -41,8 +43,20 @@ export const router = createBrowserRouter([
         element: <TeamMemberDetail />,
       },
       {
+        path: "/blogs/",
+        element: <Blogs />,
+      },
+      {
+        path: "/blogs/:blogId",
+        element: <BlogDetail />,
+      },
+      {
         path: "/reviews",
         element: <Reviews />,
+      },
+      {
+        path: "/:teamId/details/:memberId",
+        element: <TeamMemberDetail />,
       },
       {
         path: "/contact-us",

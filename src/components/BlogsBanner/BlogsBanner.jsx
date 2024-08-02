@@ -1,14 +1,11 @@
 import React from "react";
-import "./CommonBanner.css";
+import "./BlogsBanner.css";
 
-const CommonBanner = ({ bannerContent }) => {
+const BlogsBanner = ({ bannerContent }) => {
   return (
     <>
-      <section
-        className="common-banner"
-        style={{ backgroundImage: bannerContent?.image }}
-      >
-        <div className="px-5 lg:px-24 flex items-center py-[80px] md:py-[100px]">
+      <section className="blogs-banner">
+        <div className="px-5 lg:px-24 flex items-center py-[80px] md:py-[100px] custom-container">
           <div>
             <h2 className="off-white-text common-title">
               {bannerContent?.title}
@@ -21,4 +18,4 @@ const CommonBanner = ({ bannerContent }) => {
   );
 };
 
-export default CommonBanner;
+export default BlogsBanner;

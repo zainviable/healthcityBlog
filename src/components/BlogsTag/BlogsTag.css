@@ -1,0 +1,37 @@
+.blog-tags {
+  max-width: 50%;
+  margin: 20px auto;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.tags-wrapper {
+  display: flex;
+  gap: 20px;
+}
+.tags-wrapper .tags {
+  padding: 5px 10px;
+  background: #00000036;
+  font-family: "poppins";
+  border-radius: 6px;
+}
+.tags-wrapper .tags.active {
+  background-color: #84c43f54;
+  color: #84c43f;
+}
+.blog-tags h3 {
+  color: #183b56;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+@media only screen and (max-width: 1024px) {
+  .blog-tags {
+    max-width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .tags-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

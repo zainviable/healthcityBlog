@@ -91,6 +91,9 @@ const Navbar = ({
       <li className="nav-item">
         <NavLink to="/health-city/webinar">Training</NavLink>
       </li>
+      <li className="nav-item blogs-nav">
+        <NavLink to="/blogs">Blogs</NavLink>
+      </li>
       <li className="nav-item tcFull">
         <NavLink to="/terms-conditions">Terms and Conditions</NavLink>
       </li>

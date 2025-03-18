@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./blog.css";
 import { useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 import MemberCard from "../../components/MemberCard/MemberCard";
 import BlogsBanner from "../../components/BlogsBanner/BlogsBanner";
@@ -49,17 +50,6 @@ const Blogs = () => {
     document.documentElement.scrollTop = 0;
   }, []);
 
-  // const handleSelectTag = (id) => {
-  //   let findTagIndex = isTagSelected.indexOf(id);
-  //   if (findTagIndex == -1) {
-  //     setTagSelectd([...isTagSelected, id]);
-  //   } else {
-  //     let clone = isTagSelected.slice(0);
-  //     clone.splice(findTagIndex, 1);
-  //     setTagSelectd(clone);
-  //   }
-  // };
-
   const handleSelectTag = (id) => {
     let findTagIndex = isTagSelected.indexOf(id);
     if (findTagIndex == -1) {
@@ -70,9 +60,58 @@ const Blogs = () => {
       setTagSelectd(clone);
     }
   };
+
   return (
     <div>
-      {/* Meet The Team */}
+      {/* SEO Meta Tags */}
+      <Helmet>
+        <title>Blog Title - Health is Wealth</title>
+        <meta name="description" content="Explore insightful and engaging articles on health, wellness, and more." />
+        <meta name="robots" content="index, follow" />
+        
+        {/* Open Graph Tags for Social Media */}
+        <meta property="og:title" content="Health is Wealth Blog - Explore Our Insights" />
+        <meta property="og:description" content="Engaging articles on health, wellness, and lifestyle. Dive in for expert opinions, tips, and more." />
+        <meta property="og:image" content="../../assets/img/banner-bg.png" />
+        <meta property="og:url" content={window.location.href} />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Health is Wealth Blog" />
+        <meta name="twitter:description" content="Expert insights and engaging content on health and wellness." />
+        <meta name="twitter:image" content="../../assets/img/banner-bg.png" />
+
+        {/* Canonical URL Tag */}
+        <link rel="canonical" href={window.location.href} />
+
+        {/* Structured Data for Better SEO */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "http://schema.org",
+              "@type": "Blog",
+              "name": "Health is Wealth Blog",
+              "description": "A blog about health, wellness, and more.",
+              "url": "${window.location.href}",
+              "publisher": {
+                "@type": "Organization",
+                "name": "Health is Wealth",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "../../assets/img/logo.png"
+                }
+              },
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "${window.location.href}"
+              }
+            }
+          `}
+        </script>
+      </Helmet>
+
+      {/* Blog Content */}
       <BlogsBanner bannerContent={bannerContent} />
       <BlogsSearch />
       <BlogsTag
@@ -88,7 +127,6 @@ const Blogs = () => {
       )}
       <AllArticles isTagSelected={isTagSelected} />
       <Counter />
-      {/* Meet The Team */}
     </div>
   );
 };
